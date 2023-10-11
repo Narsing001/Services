@@ -1,0 +1,31 @@
+<h1>Crud Using Http Services</h1>
+<input type="text" [disabled]="true" [(ngModel)]="id">
+<input type="number" placeholder="Enter Deptno"  [(ngModel)]="Deptno" >
+<input type="text" placeholder="Enter DepName"  [(ngModel)]="Deptname">
+<input type="text"placeholder="Enter City Name"     [(ngModel)]="Deptcity">
+
+<br><br>
+<button (click)="getdata_click()">GetData</button>
+<button (click)=" adddata_click()">AddData</button>
+<button (click)=" updateDept_click()">UpdateData</button>
+<br>
+<br>
+
+
+<table border="1" [cellSpacing]="0" [cellPadding]="5">
+    <tr>
+        <th>DeptNO</th>
+        <th>DepName</th>
+        <th>DepCity</th>
+        <th>Action</th>
+    </tr>
+    <tr *ngFor="let da of Deptarray">
+        <td>{{da.Deptno}}</td>
+        <td>{{da.Deptname}}</td>
+        <td>{{da.Deptcity}}</td>
+        <td>
+            <a href="javascript:void(0)" (click)=" selectDept_click(da.id)" >Select</a> :
+            <a href="javascript:void(0)" (click)="Remove_dataclick(da.id)">Delete</a>
+        </td>
+    </tr>
+</table>

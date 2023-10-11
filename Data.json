@@ -1,0 +1,32 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "Depts": [
+    {
+      "Deptno": 20,
+      "Deptname": "IT",
+      "Deptcity": "Pune",
+      "id": 1
+    },
+    {
+      "Deptno": 40,
+      "Deptname": "HR",
+      "Deptcity": "Delhi",
+      "id": 2
+    },
+    {
+      "Deptno": 13,
+      "Deptname": "Kalij",
+      "Deptcity": "Landeshwar",
+      "id": 3
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
